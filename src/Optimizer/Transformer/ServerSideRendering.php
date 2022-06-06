@@ -64,6 +64,7 @@ final class ServerSideRendering implements Transformer
      */
     const EXCLUDED_ELEMENTS = [
         'amp-audio',
+        'amp-story-auto-ads',
     ];
 
     /**
