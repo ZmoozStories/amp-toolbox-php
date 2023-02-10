@@ -166,6 +166,8 @@ final class ServerSideRendering implements Transformer
             if (is_array($attributesToRemove)) {
                 foreach ($attributesToRemove as $attributeToRemove) {
                     if(gettype($attributeToRemove) != "boolean"){
+                        var_dump($attributeToRemove);
+                        var_dump(gettype($attributeToRemove));
                         $adaptedElement->removeAttribute($attributeToRemove);
                     }
                 }
